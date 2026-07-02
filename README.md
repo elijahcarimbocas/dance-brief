@@ -26,7 +26,7 @@ Single-file HTML with embedded CSS. Google Fonts (Source Serif 4, Inter, JetBrai
 
 §04 holds **12 lesson clips** (`#v1`…`#v12`), Jan → Jun 2026 in date order, each with the dancer's own read (comfortable / mixed / got rolled) and a §3.x ref tag. Clips stream inline via `<video>` from `assets/videos/`.
 
-Source: 12 `.MOV` files (1080p60, ~2.9 GB total) compressed with ffmpeg to **720p / H.264 CRF 30 / AAC 96k, faststart** — ~56 MB total (~98% smaller), audio kept. Re-encode command lives in the session notes; each output is well under GitHub's 100 MB file cap.
+Source: 12 `.MOV` files (1080p60, ~2.9 GB total) compressed with ffmpeg to **720p / H.264 CRF 30 / AAC 96k, faststart** - ~56 MB total (~98% smaller), audio kept. Re-encode command lives in the session notes; each output is well under GitHub's 100 MB file cap.
 
 ```
 assets/videos/
