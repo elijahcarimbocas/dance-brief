@@ -402,6 +402,13 @@ ul.plain li { margin-bottom: 0.4rem; line-height: 1.5; }
 .vid-body { padding: 0.95rem 1.15rem; }
 .vid-body .lbl { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); display: block; margin-bottom: 0.3rem; }
 .vid-body p { font-size: 0.9rem; line-height: 1.55; color: var(--ink-soft); margin: 0; }
+.vid-date { font-family: var(--mono); font-size: 11px; font-weight: 600; color: var(--forest); white-space: nowrap; }
+.vid-verdict { font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 20px; padding: 0.18rem 0.6rem; white-space: nowrap; }
+.v-comfy { color: var(--forest); background: var(--bg-warm); border: 1px solid var(--border-strong); }
+.v-mixed { color: var(--bark); background: #F0E9DA; border: 1px solid #DDCDB0; }
+.v-rolled { color: #fff; background: var(--rose); border: 1px solid var(--rose); }
+.vid-tags { padding: 0 1.15rem 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+@media (max-width: 540px) { .vid-header { grid-template-columns: auto 1fr; } .vid-date { grid-column: 1 / -1; } }
 
 /* QUESTIONS */
 .qa-block { background: var(--bg-cool); border-left: 3px solid var(--forest); border-radius: 0 6px 6px 0; padding: 1.5rem 1.75rem; margin: 1rem 0 1.5rem; }
@@ -633,23 +640,92 @@ ul.plain li { margin-bottom: 0.4rem; line-height: 1.5; }
   <!-- 04 VIDEO APPENDIX -->
   <section>
     <h2><span class="num">04</span> Video appendix</h2>
-    <p>~13 clips, each timestamped, showing the combo and what specifically broke down. Every entry maps back to a sticking point in §03.</p>
-    <div class="vid-note">PLACEHOLDER &mdash; 13 slots below. Drop each clip in the frame (upload file, or paste an unlisted YouTube / Vimeo embed), set the <strong>timestamp</strong>, name the combo, and write the "what broke" note. Ref-tag it to 3.1 / 3.2 / 3.3 / 3.4. I'll wire these once you send the clips + notes.</div>
+    <p>12 lesson clips, Jan &rarr; Jun 2026, in date order &mdash; the progression toward harder combos. Each has audio (counts + music help). My own read is under each: <strong>comfortable</strong>, <strong>mixed</strong>, or <strong>got rolled</strong>. Every clip maps back to a sticking point in §03.</p>
+    <div class="vid-note">Scrub each clip for the exact moment I describe. Videos are compressed (720p, H.264) with audio kept, streamed inline &mdash; no download needed.</div>
 
-    <!-- Repeatable block ×13 -->
-    <div class="vid" id="v1"><div class="vid-header"><span class="vid-idx">01</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 01 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v2"><div class="vid-header"><span class="vid-idx">02</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 02 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v3"><div class="vid-header"><span class="vid-idx">03</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 03 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v4"><div class="vid-header"><span class="vid-idx">04</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 04 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v5"><div class="vid-header"><span class="vid-idx">05</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 05 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v6"><div class="vid-header"><span class="vid-idx">06</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 06 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v7"><div class="vid-header"><span class="vid-idx">07</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 07 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v8"><div class="vid-header"><span class="vid-idx">08</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 08 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v9"><div class="vid-header"><span class="vid-idx">09</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 09 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v10"><div class="vid-header"><span class="vid-idx">10</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 10 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v11"><div class="vid-header"><span class="vid-idx">11</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 11 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v12"><div class="vid-header"><span class="vid-idx">12</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 12 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
-    <div class="vid" id="v13"><div class="vid-header"><span class="vid-idx">13</span><span class="vid-title">Combo name <em>Style · ref §3.x</em></span><span class="vid-time">00:00</span></div><div class="vid-frame">clip 13 — drop video / embed here</div><div class="vid-body"><span class="lbl">What broke down</span><p>TODO — describe the struggle for this clip.</p></div></div>
+    <div class="vid" id="v1">
+      <div class="vid-header"><span class="vid-idx">01</span><span class="vid-title">Carousel &rarr; wrist-grab cuddle &rarr; copa &rarr; unroll &rarr; hand toss <em>Salsa On1 · ref §3.2 · §3.4</em></span><span class="vid-date">Jan 28</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/jan28.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Very comfortable with executing the carousel. The wrist grab into the cuddle causes some difficulty because of the footwork and quick timing / transition. The copa is easy for me since I've practiced that a lot. Copa to the unroll is tricky due to how I have to lead it and execute pressure. :26 onward is difficult &mdash; follow behind me with the transitions is quick, as is the hand toss to the lead's left hand; then the sidestep and going under the follow's hand is relatively easy.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-comfy">Mostly comfy</span></div>
+    </div>
+
+    <div class="vid" id="v2">
+      <div class="vid-header"><span class="vid-idx">02</span><span class="vid-title">Open-break carousel &rarr; trace + hand toss &rarr; turn; back break &rarr; hammerlock <em>Salsa On1 · ref §3.4 · §3.2</em></span><span class="vid-date">Feb 4</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/feb04.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Open break carousel is easy, but the second open break &mdash; where the follow traces, does a hand toss, and transfers to a turn &mdash; is where I struggle. Open breaks and back break are simple; the back break to hammerlock is of moderate difficulty.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-mixed">Mixed</span></div>
+    </div>
+
+    <div class="vid" id="v3">
+      <div class="vid-header"><span class="vid-idx">03</span><span class="vid-title">Cross-body &rarr; hand toss + rockstep &rarr; behind-the-back hand toss <em>Salsa On1 · ref §3.2 · §3.4</em></span><span class="vid-date">Feb 11</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/feb11.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>First combo portion is easy &mdash; crossbody, but guiding the follow across can be difficult. Hand toss with the simultaneous rockstep is where I start to get lost. The behind-the-back hand toss is challenging, but the remainder is hand tosses. Pretty much got rolled on this combo.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-rolled">Got rolled</span></div>
+    </div>
+
+    <div class="vid" id="v4">
+      <div class="vid-header"><span class="vid-idx">04</span><span class="vid-title">Copa body wrap + follow styling <em>Salsa On1</em></span><span class="vid-date">Feb 18</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/feb18.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Everything up until the copa body wrap is cake. Everything after is also cake &mdash; a lot of it is follow styling.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-comfy">Comfortable</span></div>
+    </div>
+
+    <div class="vid" id="v5">
+      <div class="vid-header"><span class="vid-idx">05</span><span class="vid-title">Cross-body shoulder check &rarr; faceloop inside turn &rarr; crossover shoulder grab <em>Salsa On1 · ref §3.3</em></span><span class="vid-date">Mar 23</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/mar23.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Cross-body shoulder check &mdash; I'm pretty solid on that. The faceloop inside turn, putting the follow's hand behind the lead's head, is not difficult but a move I forgot the execution steps for. The crossover and grabbing the lady's shoulders is harder to execute if the follow doesn't understand the concept of "frame."</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-comfy">Mostly comfy</span></div>
+    </div>
+
+    <div class="vid" id="v6">
+      <div class="vid-header"><span class="vid-idx">06</span><span class="vid-title">Lady's hammerlock &rarr; cuddle style (rest lost) <em>Salsa On1 · ref §3.1</em></span><span class="vid-date">Mar 25</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/mar25.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Since I was gone from dancing for nearly a month, got completely rolled on this combo. The lady's hammerlock to the cuddle style is where I'm able to stay in the game, but afterwards, the rest is lost on me.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-rolled">Got rolled</span></div>
+    </div>
+
+    <div class="vid" id="v7">
+      <div class="vid-header"><span class="vid-idx">07</span><span class="vid-title">Side basic &rarr; cumbia step &rarr; free turn (favorite) <em>Salsa On1 · ref §3.2</em></span><span class="vid-date">Apr 1</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/apr01.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Probably my favorite combo &mdash; maybe it was the team outing at Chase Field and the drinks the previous hours. The only thing I might have trouble with is the side basic to cumbia step leading the follow into a free turn.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-comfy">Comfortable</span></div>
+    </div>
+
+    <div class="vid" id="v8">
+      <div class="vid-header"><span class="vid-idx">08</span><span class="vid-title">Hammerlock unfurl &rarr; follow ronde footwork <em>Salsa On1 · ref §3.3</em></span><span class="vid-date">Apr 22</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/apr22.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>This one I had trouble with &mdash; the hammerlock unfurl to the follow's ronde footwork is where I had trouble with the frame positioning. The advanced version is something that I can now execute better.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-mixed">Mixed</span></div>
+    </div>
+
+    <div class="vid" id="v9">
+      <div class="vid-header"><span class="vid-idx">09</span><span class="vid-title">Copa transition &rarr; cuddle technical work <em>Salsa On1 · ref §3.2</em></span><span class="vid-date">Apr 29</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/apr29.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>The copa transition to the cuddle technical work is where I have some trouble. The remainder of it was of moderate difficulty to me.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-mixed">Mixed</span></div>
+    </div>
+
+    <div class="vid" id="v10">
+      <div class="vid-header"><span class="vid-idx">10</span><span class="vid-title">Surprise turn; last 20% of combo <em>Salsa On1 · ref §3.1</em></span><span class="vid-date">May 6</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/may06.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Surprise turn is the only mechanic that was challenging. Last 20 percent of the video is where about 30% of the time I'd get lost during the combo.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-mixed">Mixed</span></div>
+    </div>
+
+    <div class="vid" id="v11">
+      <div class="vid-header"><span class="vid-idx">11</span><span class="vid-title">Touch and go &rarr; behind-the-back turn + arm overhead <em>Salsa On1 · ref §3.2</em></span><span class="vid-date">May 20</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/may20.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Touch and go was a new concept to me, but I got it and everything in this combo was easy to execute. The lead behind-the-back turn and placing the follow's arm overhead was tricky due to the timing.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-comfy">Mostly comfy</span></div>
+    </div>
+
+    <div class="vid" id="v12">
+      <div class="vid-header"><span class="vid-idx">12</span><span class="vid-title">Sequence w/ behind-the-follow move <em>Salsa On1</em></span><span class="vid-date">June 3</span></div>
+      <div class="vid-frame"><video controls preload="metadata" playsinline src="assets/videos/jun03.mp4"></video></div>
+      <div class="vid-body"><span class="lbl">How it felt</span><p>Except the move where you're behind the follow, this sequence was also pretty facil for me.</p></div>
+      <div class="vid-tags"><span class="vid-verdict v-comfy">Comfortable</span></div>
+    </div>
   </section>
 
   <!-- 05 QUESTIONS -->

@@ -22,13 +22,18 @@ dance-brief/
 
 Single-file HTML with embedded CSS. Google Fonts (Source Serif 4, Inter, JetBrains Mono) load from CDN at view time. Misty-forest background, green headers. Print-friendly (hero hidden, sheet flattened).
 
-## Video appendix — TODO
+## Video appendix
 
-The §04 appendix has **13 placeholder slots** (`#v1`…`#v13`). For each clip:
+§04 holds **12 lesson clips** (`#v1`…`#v12`), Jan → Jun 2026 in date order, each with the dancer's own read (comfortable / mixed / got rolled) and a §3.x ref tag. Clips stream inline via `<video>` from `assets/videos/`.
 
-1. Drop the clip into `.vid-frame` — either a local `<video>` file or an unlisted **YouTube / Vimeo** `<iframe>` embed. (Prefer unlisted embeds; 13 raw video files bloat the repo and hit GitHub's 100MB file cap.)
-2. Set the `.vid-time` timestamp and the `.vid-title` combo name.
-3. Fill the "What broke down" note and tag it to §3.1 / 3.2 / 3.3 / 3.4.
+Source: 12 `.MOV` files (1080p60, ~2.9 GB total) compressed with ffmpeg to **720p / H.264 CRF 30 / AAC 96k, faststart** — ~56 MB total (~98% smaller), audio kept. Re-encode command lives in the session notes; each output is well under GitHub's 100 MB file cap.
+
+```
+assets/videos/
+├── jan28.mp4  feb04.mp4  feb11.mp4  feb18.mp4
+├── mar23.mp4  mar25.mp4  apr01.mp4  apr22.mp4
+└── apr29.mp4  may06.mp4  may20.mp4  jun03.mp4
+```
 
 ## Deployment
 
