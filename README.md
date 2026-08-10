@@ -4,6 +4,14 @@
 
 ## Current brief
 
+### `dance-brief-2.html`
+
+Second brief, prepared for **Leela Fazzuoli and Daniele at Cavallo Dance AZ** for the Aug 10 private lesson. No history or level chart this time. Seven Salsa On1 clips from Cavallo classes (Mar 23 → Jul 30, 2026), each timestamped to the second where the lead breaks: the duck under the follow's left arm, the pretzel (which collapses into Setenta / Setenta Tres), crossbody into the Titanic, lasso into the Titanic with the left kick, the shoulder-check transfer, and the crossbody hold that reads as a travel. Two more spots are unnamed and left for the instructor to identify. Red timestamp buttons seek the inline video.
+
+**Live URL:** `https://elijahcarimbocas.github.io/dance-brief/dance-brief-2.html`
+
+## Previous brief
+
 ### `dance-brief.html`
 
 Lead skill profile prepared for a private assessment with **Leela at Cavallo Dance AZ**. Covers training history (Brenda Smith / Salsa On1 / Rueda, Carlitos & Cece / Bachata, Lawrence Garcia / Salsa On1, Felix / Rueda), current level per style, four specific sticking points (adapting to a follow's level, salsa footwork gaps, clarity-vs-aggression, hand-toss technique), a 13-clip timestamped video appendix, and questions for the instructor.
@@ -59,3 +67,15 @@ Typography: Source Serif 4 (display), Inter (body), JetBrains Mono (labels and c
 ## Version history
 
 - **v1.0** · 07.02.2026 · *dance-brief* · Initial lead skill profile for Cavallo Dance assessment
+- **v2.0** · 08.10.2026 · *dance-brief-2* · Seven Cavallo class clips, six named breakdowns plus two unnamed, for the Aug 10 lesson with Leela and Daniele
+
+## Brief II video set
+
+Filenames are ISO shoot dates, pulled from the source `.MOV` creation timestamps (the mp4 file dates are compression dates, not shoot dates). `2026-03-23` and `2026-07-30` were compressed from raw here; the other five were already 720p.
+
+```
+assets/videos/
+├── 2026-03-23.mp4  2026-07-14.mp4  2026-07-16.mp4
+├── 2026-07-21.mp4  2026-07-23.mp4  2026-07-28.mp4
+└── 2026-07-30.mp4
+```
