@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1526"/>
+      <stop offset="0.42" stop-color="#123049"/>
+      <stop offset="0.60" stop-color="#1f5f6b"/>
+      <stop offset="0.70" stop-color="#e8814f"/>
+      <stop offset="0.74" stop-color="#ffc35a"/>
+      <stop offset="0.78" stop-color="#e8814f"/>
+      <stop offset="1" stop-color="#0e2238"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff2cf"/>
+      <stop offset="0.35" stop-color="#ffc35a"/>
+      <stop offset="1" stop-color="#ffc35a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f6f79"/>
+      <stop offset="1" stop-color="#0c2b3a"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9d3a6"/>
+      <stop offset="1" stop-color="#b98f5e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <!-- sun glow -->
+  <circle cx="1080" cy="740" r="360" fill="url(#sun)"/>
+  <circle cx="1080" cy="740" r="86" fill="#fff0c8"/>
+
+  <!-- distant island + palms -->
+  <path d="M120 726 q70 -34 150 0 z" fill="#0c2233"/>
+  <g fill="#0c2233" transform="translate(190 700) scale(0.5)">
+    <rect x="-4" y="0" width="8" height="60"/>
+    <path d="M0 4 q-46 -20 -78 -8 q34 -2 78 14 z"/>
+    <path d="M0 4 q46 -20 78 -8 q-34 -2 -78 14 z"/>
+    <path d="M0 2 q-20 -34 -52 -44 q18 20 52 52 z"/>
+    <path d="M0 2 q20 -34 52 -44 q-18 20 -52 52 z"/>
+  </g>
+
+  <!-- ocean -->
+  <rect y="770" width="1600" height="150" fill="url(#ocean)"/>
+  <g stroke="#bfe9e4" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M0 812 q120 -14 240 0 t240 0 t240 0 t240 0 t240 0 t240 0"/>
+    <path d="M0 852 q120 14 240 0 t240 0 t240 0 t240 0 t240 0 t240 0"/>
+    <path d="M0 892 q120 -12 240 0 t240 0 t240 0 t240 0 t240 0 t240 0"/>
+  </g>
+
+  <!-- beach -->
+  <path d="M0 900 q400 -40 800 -6 q400 34 800 0 v106 H0 Z" fill="url(#sand)"/>
+
+  <!-- LEFT palm tree -->
+  <g transform="translate(300 970)" fill="#0a1a24">
+    <path d="M-8 0 C-34 -220 6 -430 78 -560 C40 -420 22 -230 24 -6 Z"/>
+    <g transform="translate(78 -566)">
+      <path d="M0 0 C-120 -30 -230 6 -300 70 C-220 6 -100 -18 4 -8 Z"/>
+      <path d="M0 0 C-96 -96 -122 -230 -96 -330 C-64 -220 -30 -104 8 -6 Z"/>
+      <path d="M0 0 C-10 -140 40 -270 140 -340 C60 -230 24 -110 8 -4 Z"/>
+      <path d="M0 0 C120 -34 250 0 322 66 C230 4 100 -18 -4 -8 Z"/>
+      <path d="M0 0 C96 -110 118 -232 96 -320 C64 -214 26 -102 -8 -6 Z"/>
+      <path d="M0 0 C50 -70 130 -108 210 -110 C120 -70 44 -30 -6 6 Z"/>
+      <path d="M0 0 C-50 -70 -132 -104 -212 -104 C-120 -66 -44 -28 6 6 Z"/>
+    </g>
+  </g>
+
+  <!-- RIGHT palm tree (shorter, leaning) -->
+  <g transform="translate(1360 980)" fill="#0a1a24">
+    <path d="M6 0 C40 -180 26 -350 -40 -470 C6 -350 22 -190 24 -4 Z"/>
+    <g transform="translate(-40 -476)">
+      <path d="M0 0 C110 -28 216 8 280 66 C206 6 96 -16 -4 -8 Z"/>
+      <path d="M0 0 C86 -96 110 -216 86 -300 C58 -200 24 -96 8 -6 Z"/>
+      <path d="M0 0 C8 -128 -40 -244 -132 -308 C-56 -206 -22 -100 -8 -4 Z"/>
+      <path d="M0 0 C-110 -30 -226 2 -292 62 C-208 4 -92 -18 4 -8 Z"/>
+      <path d="M0 0 C-86 -100 -108 -210 -86 -290 C-58 -192 -24 -92 8 -6 Z"/>
+      <path d="M0 0 C46 -64 120 -98 194 -100 C112 -62 40 -26 -6 6 Z"/>
+    </g>
+  </g>
+
+  <!-- foreground monstera leaves, bottom corners -->
+  <g fill="#08161f" opacity="0.9">
+    <g transform="translate(70 1000) rotate(-18)">
+      <path d="M0 0 C-40 -120 20 -250 150 -300 C120 -250 130 -150 96 -70 C150 -120 210 -110 240 -70 C170 -74 150 -20 120 24 C60 40 10 30 0 0 Z"/>
+      <path d="M150 -300 L96 -70 M60 -30 L150 -160 M100 -8 L200 -110" stroke="#0a1526" stroke-width="6" fill="none"/>
+    </g>
+    <g transform="translate(1540 1010) rotate(18) scale(-1,1)">
+      <path d="M0 0 C-40 -120 20 -250 150 -300 C120 -250 130 -150 96 -70 C150 -120 210 -110 240 -70 C170 -74 150 -20 120 24 C60 40 10 30 0 0 Z"/>
+      <path d="M150 -300 L96 -70 M60 -30 L150 -160 M100 -8 L200 -110" stroke="#0a1526" stroke-width="6" fill="none"/>
+    </g>
+  </g>
+</svg>
