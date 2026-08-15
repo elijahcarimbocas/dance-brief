@@ -137,6 +137,13 @@ section{padding:70px 0;position:relative}
 .leak.wide{grid-column:1/-1;background:linear-gradient(160deg,rgba(255,195,90,.14),transparent);border-color:rgba(255,195,90,.4)}
 .leak.wide .n{color:var(--gold)}
 
+/* cavallo briefs */
+.briefs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.briefs{grid-template-columns:1fr}}
+.briefs a.card{display:block;transition:transform .15s ease,border-color .2s}
+.briefs a.card:hover{transform:translateY(-3px);border-color:var(--coral)}
+.briefs .card h3{color:var(--coral)}
+
 /* footer */
 footer{padding:80px 0 60px;text-align:center;border-top:1px solid var(--line);background:rgba(14,29,51,.62)}
 footer .big{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,7vw,4.2rem);letter-spacing:-.03em}
@@ -416,13 +423,38 @@ footer .script{font-family:'Caveat',cursive;font-size:30px;color:var(--gold);dis
   </div>
 </section>
 
+<!-- 05 THE CAVALLO BRIEFS -->
+<section id="briefs">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="idx">05</div>
+        <h2>The Cavallo briefs</h2>
+      </div>
+      <p>Two earlier briefs from my salsa privates at Cavallo Dance, both live.</p>
+    </div>
+    <div class="briefs">
+      <a class="card rv" href="dance-brief.html">
+        <div class="kd">Brief I · July 2, 2026</div>
+        <h3>The full lead profile &rarr;</h3>
+        <p>Prepared for my first Cavallo private with Leela: training history, current level per style, four sticking points, and a 14-clip appendix.</p>
+      </a>
+      <a class="card rv" href="dance-brief-2.html">
+        <div class="kd">Brief II · Mon Aug 10 &rarr; Mon Aug 17</div>
+        <h3>Where I break, Salsa On1 &rarr;</h3>
+        <p>The brief from this last Monday's private (Aug 10), and the working doc again for Monday the 17th: seven Cavallo class clips timestamped to the exact spots where the lead falls apart.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div class="big rv">See you <em>Saturday.</em></div>
     <span class="script">noon. both of them. then Waikiki.</span>
     <div class="refs rv">
       Elijah Carimbocas · Lead · Dance Brief III · Aug 2026<br>
-      Background &amp; history: <a href="dance-brief.html">Brief I</a> · Salsa clip work: <a href="dance-brief-2.html">Brief II</a> · The trip: <a href="https://elijahcarimbocas.github.io/hawaii-bachata-2026/" target="_blank" rel="noopener">Road to Waikiki</a>
+      The trip: <a href="https://elijahcarimbocas.github.io/hawaii-bachata-2026/" target="_blank" rel="noopener">Road to Waikiki</a>
     </div>
   </div>
 </footer>
